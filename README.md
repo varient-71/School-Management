@@ -1,6 +1,7 @@
 # React + Vite
 # School-Management
 # push
+sadfjjdsjfk jiasdjfiasdjfoqwejfkasdjoiqwjefjqwekfjq4dsifjaslidjfoiejfklasdjfoiwejf
 #readme 3
 Another push
 
