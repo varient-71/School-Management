@@ -1,15 +1,19 @@
-import { BrowserRouter } from "react-router-dom";
-function App() {
-  const isSidebarOpen = true;
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './home';
+import Login from './login';
+import Register from './register';
+
+const App = () => {
   return (
-    <BrowserRouter>
-      <div className="application">
-      {/* <Sidebar isOpen={isSidebarOpen} toggleSidebar /> */}
-      <div className={`{isSidebarOpen?'md:ml-72':'flex-2'}`}>
-      </div>
-      </div>
-    </BrowserRouter>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
